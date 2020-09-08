@@ -12,7 +12,7 @@ In order to make a change, you need to...
  2. Make your changes in that branch
  3. Open a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) to merge your change into master
  4. Request the review of someone you think can give a meaningful assessment of your changes
- 5. Once that person has approved the PR, click **squash and merge** to merge your changes into masster
+ 5. Once that person has approved the PR, click **squash and merge** to merge your changes into master
 
 ### General git notes
 - [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf) with many helpful commands, for anyone who's unfamiliar

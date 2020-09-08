@@ -14,7 +14,7 @@ What this means, is no user can commit or push directly to master.
  4. Request the review of someone you think can give a meaningful assessment of your changes
  5. Once that person has approved the PR, click **squash and merge** to merge your changes into masster
 
-#### General git notes
+### General git notes
 - [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf) with many helpful commands, for anyone who's unfamiliar
 - Make many small commits, rather than a few big ones
 - Use meaningful commit messages so it's easy to read through changes

@@ -4,6 +4,12 @@
 - **Unity version:** 2020.1.4f1
 - **Recommended IDE:** JetBrains Rider *(free for Case students)*
 
+### Setting up Unity Smart Merge
+Unity has a built-in tool to make merging weird files like scenes easier. 
+The instructions for setting that up can be found here: [Unity - Manual: Smart Merge](https://docs.unity3d.com/2020.1/Documentation/Manual/SmartMerge.html).
+
+On Mac, the path to `UnityYAMLMerge` is `/Applications/Unity/Hub/Editor/2020.1.4f1/Unity.app/Contents/Tools/UnityYAMLMerge`
+
 ## GitHub Setup
 We'll be using a **protected master branch**. 
 What this means, is no user can commit or push directly to master. 

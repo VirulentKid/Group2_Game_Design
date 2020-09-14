@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    bool facingR = true;
+    //bool facingR = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class Projectile : MonoBehaviour
 
     
 
-    void faceMouse()
+    /*void faceMouse()
     {
         Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if(mouse.x > transform.position.x && !facingR)
@@ -32,5 +32,5 @@ public class Projectile : MonoBehaviour
             transform.Rotate(0f, 180f, 0f);
             facingR = false;
         }
-    }
+    }*/
 }

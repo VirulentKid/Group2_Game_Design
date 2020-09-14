@@ -8,8 +8,6 @@ public class ProjectileLauncher : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 10.0f;
     public float bulletDestroyTime = 3.0f;
-    private Vector3 target;
-    bool facingR = true;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +19,7 @@ public class ProjectileLauncher : MonoBehaviour
     void Update()
     {
         followPlayer(gameObject);
-        follow(gameObject);
+        followMouse(gameObject);
         if (Input.GetMouseButtonDown(0))
         {
             shoot();
@@ -29,7 +27,7 @@ public class ProjectileLauncher : MonoBehaviour
     }
 
     //let arm follow the mouse and flip
-    void follow(GameObject input)
+    void followMouse(GameObject input)
     {
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         difference.Normalize();
@@ -53,10 +51,9 @@ public class ProjectileLauncher : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab) as GameObject;
         followPlayer(bullet);
-        follow(bullet);
+        followMouse(bullet);
 
-        target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
-        Vector3 difference = target - transform.position;
+        Vector3 difference = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z)) - transform.position;
         float distance = difference.magnitude;
         Vector2 direction = difference / distance;
         direction.Normalize();
